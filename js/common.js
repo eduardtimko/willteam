@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 	var form_id = '.form';
 	var form_ids = '.form-b'
-	$(form_ids).submit(function (evt) {//обработчик события submit для формы                           
+	$(form_ids).submit(function (evt) {//обработчик события submit для формы
 		var http = new XMLHttpRequest(), f = this;
 		var named;
 		evt.preventDefault();
@@ -17,7 +17,7 @@ $(document).ready(function () {
 		http.send("tokenF=" + f.tokenF.value + "&name=" + f.name.value + "&phone=" + f.phone.value + "&email=" + f.email.value + "&site=" + f.site.value + "&check=" + check);
 		http.onreadystatechange = function () {//функция, которую запрос вызовет, когда получит ответ с сервера
 			if (http.readyState == 4 && http.status == 200) {
-				named = http.responseText;// из отправленной формы            
+				named = http.responseText;// из отправленной формы
 				f.phone.removeAttribute('value'); // очистить поле сообщения (две строки)
 				f.site.removeAttribute('value');
 				f.email.removeAttribute('value');
@@ -32,16 +32,16 @@ $(document).ready(function () {
 						src: '#modal1_thanks'
 					},
 					type: 'inline'
-				});//открытие окна с благодарностью 
+				});//открытие окна с благодарностью
 
 			}
 		}
 		http.onerror = function () {
 			alert('Извините, данные не были переданы');
 		}
-	});//конец 
+	});//конец
 
-	$(form_id).submit(function (evt) {//обработчик события submit для формы                           
+	$(form_id).submit(function (evt) {//обработчик события submit для формы
 		var http = new XMLHttpRequest(), f = this;
 		var named;
 		evt.preventDefault();
@@ -56,7 +56,7 @@ $(document).ready(function () {
 		http.send("tokenF=" + f.tokenF.value + "&name=" + f.name.value + "&phone=" + f.phone.value + "&check=" + check);
 		http.onreadystatechange = function () {//функция, которую запрос вызовет, когда получит ответ с сервера
 			if (http.readyState == 4 && http.status == 200) {
-				named = http.responseText;// из отправленной формы            
+				named = http.responseText;// из отправленной формы
 				f.phone.removeAttribute('value'); // очистить поле сообщения (две строки)
 				f.phone.value = '';
 				$(f).magnificPopup('close');
@@ -65,14 +65,14 @@ $(document).ready(function () {
 						src: '#modal1_thanks'
 					},
 					type: 'inline'
-				});//открытие окна с благодарностью 
+				});//открытие окна с благодарностью
 
 			}
 		}
 		http.onerror = function () {
 			alert('Извините, данные не были переданы');
 		}
-	});//конец 
+	});//конец
 
 	$(".popup_c").magnificPopup({
 		type: 'inline',
@@ -103,12 +103,31 @@ $(document).ready(function () {
 		],
 		paginationSpeed: 1000,
 		goToFirstSpeed: 2000,
-		items: 1,//на всю ширину (количество слайдов на экране одновременно?) 
+		items: 1,//на всю ширину (количество слайдов на экране одновременно?)
 		itemsDesktop: [992, 1],
 		itemsDesktopSmall: [768, 1],
 		itemsTablet: [576, 1],
 		itemsMobile: [320, 1]
 	});
+
+	$('.mtt_content_block').each(function(i,elem) {
+		$(elem).find('li').each(function(i_ch,elem_ch) {
+			if(i_ch % 2 != 0){
+				$(elem_ch).addClass('even_block');
+			};
+		});
+	});
+
+	// Табы castom
+	$('.mtt_title .mtt_tab').on('click', function() {
+		$('.mtt_title .mtt_tab').removeClass('activ');
+		$('.mtt_body .mtt_content_block').removeClass('activ');
+		$(this).addClass('activ');
+		var data = $(this).attr('data-itemTab');
+		$('.mtt_body #' + data).addClass('activ');
+	});
+
+
 
 	//Яндекс-карта
 	ymaps.ready(function () {
