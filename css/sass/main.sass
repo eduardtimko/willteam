@@ -1,0 +1,545 @@
+@import "bourbon/bourbon"
+
+$grey_light: #e8e8e8
+$grey_rose: #ecd9d1
+
+body
+	font-family: "Gilroy", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+	color: #000000
+
+.hidden
+	display: none
+
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+a		
+	text-decoration: none	
+	&:hover
+		text-decoration: none			
+	&:focus				
+		outline: none
+
+a:visited, a:active, a:focus
+	text-decoration: none
+
+.rel
+	position: relative
+
+input	
+	width: 100%	
+	padding: 15px
+	padding-left: 20px	
+	color: #fff
+	font-size: 15px
+	border-radius: 7px	
+	border: 1px solid #fff
+	background: rgba(255,255,255,0.03)
+	text-align: center
+	font-size: 15px			
+	&:focus				
+		outline: none
+		border: 1px solid #fff
+	
+.btn
+	background: #ffdf40
+	background: -moz-linear-gradient(top,  #ffdf40 0%, #ff8359 100%)
+	background: -webkit-linear-gradient(top,  #ffdf40 0%,#ff8359 100%)
+	background: linear-gradient(to bottom,  #ffdf40 0%,#ff8359 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdf40', endColorstr='#ff8359',GradientType=0 )
+	border: none
+	border-radius: 7px
+	padding: 20px 40px
+	font-size: 16px
+	line-height: 18px	
+	transition: all 0.2s ease-out 0s
+	color: #000
+	width: 100%
+	text-transform: uppercase
+	font-weight: bold
+	cursor: pointer
+	display: block
+	&:hover		
+		text-shadow: 1px 1px 18px rgba(211, 255, 255, 1)
+	&:focus		
+		color: #000
+.btn_img
+	background: url("../img/bg-button.png") no-repeat top left	
+	border: none
+	padding: 20px 40px
+	font-size: 16px
+	line-height: 18px	
+	transition: all 0.2s ease-out 0s
+	color: #000
+	width: 100%
+	text-transform: uppercase
+	font-weight: bold
+	cursor: pointer
+	&:hover		
+		text-shadow: 1px 1px 18px rgba(211, 255, 255, 1)
+	&:focus		
+		color: #000
+
+header
+	background: url("../img/bg-header.jpg") no-repeat top center
+	-webkit-background-size: cover
+	background-size: cover
+	color: #fff
+	padding-top: 20px
+	padding-bottom: 35px
+	.logo		
+		position: relative
+		display: inline-block
+		img
+			padding-right: 25px
+		&:after
+			content: ''
+			position: absolute
+			width: 1px
+			height: 100%			
+			right: 0px
+			top: 0px
+			background: #bababa
+	.desc
+		font-weight: bold
+	.phone
+		font-weight: bold
+		font-size: 22px
+		text-align: right
+	.main_menu
+		ul#menu_top				
+			padding: 25px 0
+			li
+				padding: 0px 15px
+				font-weight: 500
+				display: inline-block
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					width: 1px
+					height: 100%			
+					right: 0px
+					top: 0px
+					background: #fff
+				&:first-child
+					padding-left: 0
+				&:last-child:after
+					display: none
+
+				a
+					color: #fff
+					font-weight: 500
+					&:hover
+						color: $grey_rose
+	.wrap_head
+		padding-top: 40px
+		h1
+			font-size: 70px
+			font-weight: 900
+			line-height: 70px
+		.des
+			font-size: 36px
+			font-weight: bold
+			color: $grey_rose
+		.wrap_form
+			margin-top: 50px
+			margin-bottom: 35px
+			width: 380px
+			.wrap_input
+				margin-bottom: 15px
+			.wrap_submit
+				margin-top: 25px
+			input
+				&::-webkit-input-placeholder
+					color: $grey_light
+				&::-moz-placeholder
+					color: $grey_light
+				&:-ms-input-placeholder
+					color: $grey_light
+		.head_mes
+			width: 480px
+			color: $grey_light
+			span
+				font-size: 20px
+				font-weight: 800
+				display: block
+		.wrap_mes
+			margin-top: 25px
+			li
+				display: inline-block
+				margin-right: 20px
+				width: 30px
+				height: 30px
+				background: url("../img/soc-icon-set.png") no-repeat 0 0
+				cursor: pointer
+				&.fb
+					background-position: -45px 0
+				&.tl
+					background-position: -95px 0
+					margin-right: 0
+
+.example
+	background: url("../img/bg-s2.png") no-repeat top center, url("../img/bg-s2-2.png") no-repeat bottom center
+	padding-top: 130px
+	margin-top: -65px
+	padding-bottom: 50px
+	.wrap_sect
+		background: #f8f3f3
+		padding-top: 50px
+		padding-bottom: 45px		
+		h2
+			font-size: 50px
+			margin-bottom: 35px
+			text-align: center
+		.wrap_it
+			position: relative
+			padding-bottom: 30px
+			padding-top: 50px			
+			&:after
+				content: ""
+				position: absolute
+				width: 100%
+				height: 1px
+				left: 0px
+				bottom: 0px
+				background: $grey_light
+		.carousel			
+			.wrap_item
+				text-align: center
+				img
+					max-width: 300px
+			.owl-pagination		
+				height: 10px
+				margin: 0 auto						
+				margin-top: 35px						
+				text-align: center				
+				margin: 0 25px
+				margin-top: 25px	
+				.owl-page
+					width: 10px
+					height: 10px
+					background-color: $grey_light						
+					display: inline-block	
+					vertical-align: top				
+					-webkit-border-radius: 10px
+					-moz-border-radius: 10px
+					border-radius: 10px	
+					margin-right: 10px								
+					&.active								
+						background-color: $grey_rose
+		ul
+			margin-top: 25px
+			li
+				margin-bottom: 15px
+				i
+					color: #b63d42
+					font-size: 18px
+		h3
+			font-size: 24px
+			font-weight: bold
+			margin-bottom: 15px
+		.btn_block
+			margin: auto
+			margin-top: 85px
+			margin-bottom: 50px
+			width: 60%			
+			.btn			
+				position: relative
+				text-align: center
+				line-height: 24px
+				&:after
+					background: transition
+					width: 100%
+					height: 100%
+					position: absolute
+					left: 0
+					top: 0
+					content: ''
+					-webkit-transition: all .3s ease-out
+					-moz-transition: all .3s ease-out
+					-o-transition: all .3s ease-out
+					-ms-transition: all .3s ease-out
+					box-shadow: 0 8px 30px rgba(189,68,73,.36)
+					border-radius: 7px
+				&:hover
+					color: #000
+					&:after
+						display: none
+
+.ad
+	background: #fff
+	padding-top: 85px	
+	.wrap_sect			
+		padding-bottom: 100px
+		h2
+			font-size: 50px
+			margin-bottom: 85px
+			text-align: center
+		.wrap_item
+			text-align: center
+			margin-bottom: 75px
+			h3
+				font-size: 24px
+				font-weight: bold
+				margin-bottom: 15px
+			.wrap_icon
+				background: #e3696e
+				background: -moz-linear-gradient(-45deg, #e3696e 0%, #b63d42 100%)
+				background: -webkit-linear-gradient(-45deg, #e3696e 0%,#b63d42 100%)
+				background: linear-gradient(135deg, #e3696e 0%,#b63d42 100%)
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3696e', endColorstr='#b63d42',GradientType=1 )
+				width: 100px
+				height: 100px
+				border-radius: 50%
+				text-align: center
+				margin: 0 auto
+				position: relative
+				margin-bottom: 55px
+				&:before
+					background: none
+					border: 2px dotted #898787
+					content: ""
+					display: block
+					position: absolute
+					top: -10px
+					left: -10px
+					right: -10px
+					bottom: -10px
+					pointer-events: none
+					border-radius: 20px
+
+				.fa
+					color: #fff
+					margin-top: 20px
+			.rot
+				transform: rotate(45deg)
+				border-radius: 15px				
+			.a_rot
+				transform: rotate(-45deg)
+			.wrap_text				
+				margin: 0 auto
+				padding: 0 25px
+
+.table_var
+	background: $grey_light url("../img/bg-tabl.png") no-repeat bottom center
+	padding-top: 125px
+	padding-bottom: 175px
+	h2
+		font-size: 40px
+		text-align: center
+	.wrap_table
+		padding-top: 50px
+		padding-bottom: 40px		
+		.classTable
+			width: 100%
+			text-align: center			
+			display: table
+			border-spacing: 7px		
+			.divTableHeading				
+				display: table-header-group
+				.divTableRow
+					display: table-row					
+					.divTableHead												
+						text-align: center
+						display: table-cell
+						padding: 7px						
+						span							
+							display: block
+							padding: 15px
+							font-size: 20px
+							font-weight: bold
+							cursor: default
+							margin-bottom: 5px
+						&.zn
+							vertical-align: middle
+							text-transform: uppercase
+			.divTableBody
+				display: table-row-group
+				.divTableRow
+					display: table-row					
+					&:nth-child(even) .divTableCell
+						background: #f6f6f6
+					.divTableCell
+						padding: 15px
+						display: table-cell
+						vertical-align: middle	
+						&.price_new
+							font-size: 22px
+							font-weight: 800
+						&.price_old
+							text-decoration: line-through					
+						&.left
+							text-align: left
+						.btn
+							padding: 20px 10px							
+							position: relative
+							&:after
+								background: transition
+								width: 100%
+								height: 100%
+								position: absolute
+								left: 0
+								top: 0
+								content: ''
+								-webkit-transition: all .3s ease-out
+								-moz-transition: all .3s ease-out
+								-o-transition: all .3s ease-out
+								-ms-transition: all .3s ease-out
+								box-shadow: 0 8px 30px rgba(189,68,73,.36)
+								border-radius: 7px
+							&:hover
+								color: #000
+								&:after
+									display: none
+	
+.offer
+	background: url("../img/bg-off.png") no-repeat top center
+	margin-top: -125px
+	color: #fff
+	padding-top: 100px
+	padding-bottom: 55px
+	h2
+		font-size: 50px
+		margin-bottom: 85px
+		text-align: center
+	.wrap_img
+		margin-bottom: 130px
+		img
+			width: 100%
+	.wrap_form
+		margin: auto
+		margin-top: 50px
+		margin-bottom: 35px
+		width: 380px
+		.wrap_input
+			margin-bottom: 15px
+		.wrap_submit
+			margin-top: 25px
+		input
+			&::-webkit-input-placeholder
+				color: $grey_light
+			&::-moz-placeholder
+				color: $grey_light
+			&:-ms-input-placeholder
+				color: $grey_light
+
+footer
+	background: url("../img/bg-footer.png") no-repeat top center
+	padding-top: 125px
+	padding-bottom: 50px
+	margin-top: -125px
+	color: #fff 
+	.men
+		margin-top: 35px
+		li
+			margin-bottom: 10px
+			&:last-child
+				margin-top: 25px
+				color: #CCC
+				font-size: 13px
+	.wrap_cont
+		margin-top: 35px
+	.phone
+		font-size: 16px
+		margin-bottom: 10px
+	.mail
+		font-size: 16px
+	.map
+		height: 300px
+	a
+		display: block
+		color: #fff
+		&:hover
+			color: $grey_rose
+	.wrap_mes
+		margin-top: 25px
+		li
+			display: inline-block
+			margin-right: 20px
+			width: 30px
+			height: 30px
+			background: url("../img/soc-icon-set.png") no-repeat 0 0
+			cursor: pointer
+			&.fb
+				background-position: -45px 0
+			&.tl
+				background-position: -95px 0
+				margin-right: 0
+
+#popup_quest, #popup_mod1, #popup_mod2, #popup_mod3, #popup_mod4	
+	max-width: 480px
+	margin: auto	
+	background-color: #fff	
+	position: relative
+	padding: 40px
+	text-align: center
+	input	
+		width: 100%	
+		padding: 15px
+		padding-left: 20px		
+		font-size: 15px
+		border-radius: 7px	
+		border: 1px solid #b8b8b8
+		background: #fff
+		text-align: center
+		font-size: 15px	
+		color: #000		
+		&:focus				
+			outline: none
+			border: 1px solid #bd4449
+	.mfp-close
+		right: 0
+		top: 0	
+	h3		
+		padding: 25px 30px
+		font-size: 27px
+		font-weight: bold
+		color: #fff
+		border-top-right-radius: 10px
+		border-top-left-radius: 10px 
+		text-align: center
+		margin-bottom: 0
+	.des
+		margin-bottom: 25px
+	.wrap_input
+		margin-bottom: 15px
+	.wrap_submit
+		text-align: center
+		margin-top: 25px
+		.btn
+			width: 100%	
+
+.modal
+	background: #fff	
+	max-height: 120%	
+	max-width: 870px
+	margin: auto	
+	z-index: 1003
+	position: relative
+	button.mfp-close			
+		background-image: url("../img/close-icon.png") no-repeat
+		right: 0
+		top: 0
+	.modalfill			
+		margin: auto 
+		padding: 100px 0
+		.modal-content
+			padding: 24px
+			.tac
+				text-align: center
+				font-size: 26px	
+				
+						
+
+
+
+

@@ -1,0 +1,394 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.example .wrap_sect {
+		padding-top: 0;
+	}
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell {
+		max-width: 150px;
+		box-sizing: content-box;
+		width: 150px;
+	}
+	.offer {
+		padding-top: 75px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	header {
+		background-position: top left -365px;
+		padding-bottom: 60px;
+	}
+	header .wrap_head {
+		padding-top: 15px;
+	}
+	.example {
+		margin-top: -55px;
+	}
+	.example .wrap_sect .btn_block {
+		width: 80%;
+	}
+	.table_var .wrap_table .classTable .divTableHeading .divTableRow .divTableHead {
+		max-width: 90px;
+		width: 90px;
+		font-size: 12px;
+	}
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell {
+		max-width: 90px;
+		width: 90px;
+		font-size: 12px;
+	}
+	.table_var h2 {
+		font-size: 30px;
+	}
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell.price_old,
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell.price_new,
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell .btn {
+		font-size: 14px;
+	}
+	.table_var .quest_text .qt2 {
+		font-size: 40px;
+	}
+	.offer h2 {
+		font-size: 34px;
+	}
+	.offer .wrap_form {
+		width: 100%;
+		margin-top: 0;
+	}
+	.offer .btn_img {
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
+	footer .map {
+		margin-top: 35px;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	header {
+		background-position: top left;
+	}
+	header .logo img {
+		width: 100%;
+	}
+
+	header .desc {
+		padding-left: 20px;
+	}
+	header .phone {
+		font-size: 16px;
+	}
+	header .wrap_head h1 {
+		font-size: 65px;
+	}
+	.example {
+		padding-top: 75px;
+	}
+	.example .wrap_sect h2 {
+		font-size: 44px;
+	}
+	.example .gallery {
+		margin-bottom: 25px;
+	}
+	.example .wrap_sect h3 {
+		text-align: center;
+	}
+	.ad {
+		padding-top: 40px;
+	}
+	.ad .wrap_sect h2 {
+		font-size: 44px;
+	}
+	.table_var .wrap_table {
+		overflow-x: auto; 
+		position: relative;
+		z-index: 100;
+	}
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell,
+	.table_var .wrap_table .classTable .divTableHeading .divTableRow .divTableHead {
+		max-width: 250px;
+		width: auto;
+		font-size: 14px;
+	}
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell.price_new {
+		font-size: 18px;
+	}
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell .btn {
+		padding: 15px 7px;
+	}
+	.table_var .btn_block {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.offer {
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.offer h2 {
+		margin-bottom: 40px;
+	}
+	.offer .wrap_img {
+		margin-bottom: 40px;
+	}
+	.offer .btn_img {
+		background-position: center center;
+	}
+	.offer .wrap_form {
+		margin-bottom: 65px;
+	}
+	footer .margin_bot {
+		margin-top: 30px;
+	}
+	footer {
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	footer .men {
+		text-align: center;
+	}
+	footer .wrap_cont {
+		text-align: center;
+	}
+
+}
+@media only screen and (max-width : 576px) {
+	header .phone {
+		text-align: center;
+		font-size: 22px;
+		margin-top: 15px;
+	}
+	header .logo {
+		padding-left: 50px;
+	}
+	header .desc {
+		padding-right: 90px;
+	}
+	header .logo img {
+	    padding-right: 35px;
+	}
+	header .main_menu ul#menu_top {
+		text-align: center;
+	}
+	header .wrap_head h1, header .wrap_head .des {
+		text-align: center;
+	}
+	header .wrap_head .wrap_form {
+		margin: auto;
+	    margin-top: 50px;
+	    margin-bottom: 35px;
+	}
+	header .wrap_head .head_mes {
+		text-align: center;
+		width: 100%;
+	}
+	header .wrap_head .wrap_mes {
+		text-align: center;
+	}
+	.example .wrap_sect .btn_block {
+		width: 90%;
+	}
+	.ad .wrap_sect {
+		padding-bottom: 50px;
+	}
+	.table_var {
+		padding-top: 75px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	header {
+		padding-bottom: 75px;
+	}
+	header .wrap_head {	
+	    padding-top: 25px;
+	}
+	header .wrap_head h1 {
+		font-size: 48px;
+	}
+	header .desc {
+		padding-right: 30px;
+	}
+	.example .wrap_sect h2 {
+		font-size: 34px;
+	}
+	.ad .wrap_sect h2 {
+		font-size: 34px;
+	}
+
+}
+
+@media only screen and (max-width : 414px) {
+	header .desc {
+		padding-right: 0px;
+	}
+	header .logo {
+	    padding-left: 30px;
+	}
+	header .main_menu ul#menu_top li {
+		margin-bottom: 15px;
+	}
+	header .main_menu ul#menu_top li:nth-child(4):after {
+		display: none;
+	}
+	header .wrap_head {
+		padding-top: 0;
+	}
+	header .wrap_head .des {
+		font-size: 28px;
+	}
+	header .logo img {
+		min-width: 148px;
+		padding-right: 0;
+	}
+	header .wrap_head .wrap_form {
+		width: 360px;
+	}
+	.btn_img {
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
+}
+
+@media only screen and (max-width : 375px) {
+	header .wrap_head h1 {
+	    font-size: 40px;
+	}
+	header .wrap_head .wrap_form {
+	    width: 345px;
+	}
+	.table_var {
+		padding-top: 20px;
+	}
+	.table_var h2 {
+		font-size: 24px;
+	}
+	.table_var .quest_text .qt1 {
+	    font-size: 20px;
+	    text-align: center;
+	}
+	.table_var .quest_text .qt2 {
+	    font-size: 32px;
+	    text-align: center;
+	}
+	.example .wrap_sect h2 {
+		font-size: 30px;
+	}
+	.ad .wrap_sect h2 {
+		font-size: 30px;
+	}
+	.offer {
+		padding-bottom: 45px;
+	}
+	.offer h2 {
+		font-size: 24px;
+	}
+
+}
+
+@media only screen and (max-width : 360px) {
+	header .wrap_head .wrap_form {
+    	width: 320px;
+	}
+	header .logo {
+	    padding-left: 5px;
+	}
+	.btn_img {
+		padding: 15px 40px;
+		background-position: center center;
+	}
+	.example .wrap_sect .btn_block {
+		margin-top: 50px;
+		margin-bottom: 0;
+	}
+	.table_var .quest_text .qt1 {
+	    font-size: 18px;
+	}
+	.table_var {
+		padding-bottom: 25px;
+	}
+	.offer {
+		margin-top: 0;
+		padding-top: 45px;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 346px) {
+	header .main_menu ul#menu_top li:nth-child(4):after {
+		display: block;
+	}
+	header .main_menu ul#menu_top li:nth-child(3):after {
+		display: none;
+	}
+	header .wrap_head h1 {
+	    font-size: 35px;
+	}
+	header .wrap_head .wrap_form {
+	    width: 290px;
+	}
+	.ad .wrap_sect {
+		padding-bottom: 0;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	/* Иконка мобильного меню */
+	/* Добавим анимацию всех свойств для блоков нашей иконки */
+	header .top_line .main_menu_button span, 
+	header .top_line .main_menu_button span:before, 
+	header .top_line .main_menu_button span:after {
+	  transition: all 500ms ease-in-out;
+	}
+
+	/* Центральный блок делаем прозрачным */
+	header .top_line .main_menu_button.active span {
+	  background-color: transparent;
+	}
+
+	/* Смещаем псевдо-элементы в центр иконки (на место основного блока) */
+	header .top_line .main_menu_button.active span:before, 
+	header .top_line .main_menu_button.active span:after {
+	  top: 0;
+	}
+
+	/* Наклоняем псевдо-элементы под углом 45 градусов, но в разные стороны */
+	header .top_line .main_menu_button.active span:before {
+	  transform: rotate(45deg);
+	}
+	header .top_line .main_menu_button.active span:after {
+	  transform: rotate(-45deg);
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
