@@ -1,0 +1,271 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	header .wrap_head h1 {
+		font-size: 60px;
+	}
+	header .wrap_head .des {
+		font-size: 33px;
+	}
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell {
+		max-width: 150px;
+		box-sizing: content-box;
+		width: 150px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	header .logo img {
+		width: 100%;
+	}
+	header {
+		background-position: top left
+	}
+	header .desc {
+		margin-left: 25px;
+	}
+	header .wrap_head h1 {
+		margin-top: 15px;
+	}
+	header .wrap_head .des {
+		width: 90%;
+	}
+	.get {
+		padding-top: 60px;
+		-webkit-background-size: contain, contain;
+		background-size: contain, contain;
+		padding-bottom: 25px;
+	}
+	.get .wrap_sect .wrap_item .wrap_text {
+		width: 225px;
+	}
+	.table_var .wrap_table .classTable .divTableHeading .divTableRow .divTableHead {
+		max-width: 90px;
+		width: 90px;
+		font-size: 12px;
+	}
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell {
+		max-width: 90px;
+		width: 90px;
+		font-size: 12px;
+	}
+	.table_var h2 {
+		font-size: 30px;
+	}
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell.price_old,
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell.price_new,
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell .btn {
+		font-size: 14px;
+	}
+	.table_var .quest_text .qt2 {
+		font-size: 40px;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.get {
+		background: none;
+		margin-top: 0;
+		padding-top: 0;
+	}
+	header {
+		padding-bottom: 90px;
+	}
+	header .wrap_head .des {
+	    width: 80%;
+	}
+	.get .wrap_sect h2 {
+		font-size: 40px;
+	}
+	.get .wrap_sect .wrap_item {
+		margin-bottom: 70px;
+	}
+	.get .wrap_sect .wrap_item .wrap_icon {
+		margin-bottom: 35px;
+	}
+	.get .wrap_sect {
+		padding-bottom: 45px;
+	}
+
+	.table_var .wrap_table {
+		overflow-x: auto; 
+		position: relative;
+		z-index: 100;
+	}
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell,
+	.table_var .wrap_table .classTable .divTableHeading .divTableRow .divTableHead {
+		max-width: 250px;
+		width: auto;
+		font-size: 14px;
+	}
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell.price_new {
+		font-size: 18px;
+	}
+	.table_var .wrap_table .classTable .divTableBody .divTableRow .divTableCell .btn {
+		padding: 15px 7px;
+	}
+	.table_var .btn_block {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+}
+@media only screen and (max-width : 576px) {
+	header .wrap_head .des {
+		width: 100%;
+	}
+	header .logo {
+		padding-left: 50px;
+	}
+	header .desc {
+		padding-right: 40px;
+	}
+	header .logo img {
+	    padding-right: 35px;
+	}
+	
+	header .wrap_head h1, header .wrap_head .des {
+		text-align: center;
+	}
+	.get .wrap_sect h2 {
+		text-align: center;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	header .desc {
+		padding-right: 25px;
+	}
+	header .wrap_head {	
+	    padding-top: 25px;
+	}
+	header .wrap_head h1 {
+		font-size: 48px;
+	}
+	
+
+}
+
+@media only screen and (max-width : 414px) {
+	header .desc {
+		padding-right: 0px;
+	}
+	header .logo {
+	    padding-left: 30px;
+	}
+	
+	header .wrap_head {
+		padding-top: 0;
+	}
+	header .wrap_head .des {
+		font-size: 28px;
+	}
+	
+}
+
+@media only screen and (max-width : 375px) {
+	header .wrap_head h1 {
+	    font-size: 40px;
+	}
+	.get .wrap_sect h2 {
+	    font-size: 24px;
+	}
+	.table_var {
+		padding-top: 20px;
+	}
+	.table_var h2 {
+		font-size: 24px;
+	}
+	.table_var .quest_text .qt1 {
+	    font-size: 20px;
+	    text-align: center;
+	}
+	.table_var .quest_text .qt2 {
+	    font-size: 32px;
+	    text-align: center;
+	}
+
+}
+
+@media only screen and (max-width : 360px) {
+	
+	header .logo {
+	    padding-left: 5px;
+	}
+	header .wrap_head h1 {
+	    line-height: 55px;
+	    margin-top: 25px;
+	}
+	.table_var .quest_text .qt1 {
+	    font-size: 18px;
+	}
+	.table_var {
+		padding-bottom: 120px;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 346px) {
+	
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	/* Иконка мобильного меню */
+	/* Добавим анимацию всех свойств для блоков нашей иконки */
+	header .top_line .main_menu_button span, 
+	header .top_line .main_menu_button span:before, 
+	header .top_line .main_menu_button span:after {
+	  transition: all 500ms ease-in-out;
+	}
+
+	/* Центральный блок делаем прозрачным */
+	header .top_line .main_menu_button.active span {
+	  background-color: transparent;
+	}
+
+	/* Смещаем псевдо-элементы в центр иконки (на место основного блока) */
+	header .top_line .main_menu_button.active span:before, 
+	header .top_line .main_menu_button.active span:after {
+	  top: 0;
+	}
+
+	/* Наклоняем псевдо-элементы под углом 45 градусов, но в разные стороны */
+	header .top_line .main_menu_button.active span:before {
+	  transform: rotate(45deg);
+	}
+	header .top_line .main_menu_button.active span:after {
+	  transform: rotate(-45deg);
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

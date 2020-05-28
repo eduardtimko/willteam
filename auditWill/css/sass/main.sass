@@ -1,0 +1,363 @@
+@import "bourbon/bourbon"
+
+$grey_light: #e8e8e8
+$grey_rose: #ecd9d1
+
+html
+	overflow-x: hidden
+
+body
+	font-family: "Gilroy", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+	color: #000000	
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+a		
+	text-decoration: none	
+	&:hover
+		text-decoration: none
+		color: #bd4449			
+	&:focus				
+		outline: none
+
+a:visited, a:active, a:focus
+	text-decoration: none
+
+.rel
+	position: relative
+
+input	
+	width: 100%	
+	padding: 15px
+	padding-left: 20px		
+	font-size: 15px
+	border-radius: 7px	
+	border: 1px solid #b8b8b8
+	background: #fff
+	text-align: center
+	font-size: 15px			
+	&:focus				
+		outline: none
+		border: 1px solid #bd4449
+
+.btn 
+	background: #ffdf40
+	background: -moz-linear-gradient(top,  #ffdf40 0%, #ff8359 100%)
+	background: -webkit-linear-gradient(top,  #ffdf40 0%,#ff8359 100%)
+	background: linear-gradient(to bottom,  #ffdf40 0%,#ff8359 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdf40', endColorstr='#ff8359',GradientType=0 )
+	border: none
+	border-radius: 7px
+	padding: 20px 40px
+	font-size: 16px
+	line-height: 18px	
+	transition: all 0.2s ease-out 0s
+	color: #000
+	width: 100%
+	text-transform: uppercase
+	font-weight: bold
+	cursor: pointer
+	display: block
+	&:hover		
+		text-shadow: 1px 1px 18px rgba(211, 255, 255, 1)
+	&:focus		
+		color: #000
+
+header
+	background: url("../img/bg-header.jpg") no-repeat top center
+	-webkit-background-size: cover
+	background-size: cover
+	color: #fff
+	padding-top: 20px
+	padding-bottom: 210px
+	.logo		
+		position: relative
+		display: inline-block
+		img
+			padding-right: 25px
+		&:after
+			content: ''
+			position: absolute
+			width: 1px
+			height: 100%			
+			right: 0px
+			top: 0px
+			background: #bababa
+	.desc
+		font-weight: bold
+	.phone
+		font-weight: bold
+		font-size: 22px
+		text-align: right
+	
+	.wrap_head
+		padding-top: 40px
+		h1
+			font-size: 70px
+			font-weight: 900
+			line-height: 90px
+			margin-top: 75px
+			span
+				display: block				
+		.des
+			font-size: 36px
+			font-weight: bold
+			color: $grey_rose
+		
+		.wrap_mes
+			margin-top: 25px
+			li
+				display: inline-block
+				margin-right: 20px
+				width: 30px
+				height: 30px
+				background: url("../img/soc-icon-set.png") no-repeat 0 0
+				cursor: pointer
+				&.fb
+					background-position: -45px 0
+				&.tl
+					background-position: -95px 0
+					margin-right: 0
+
+.get
+	background: url("../img/bg-s2.png") no-repeat top center, url("../img/bg-s2-2.png") no-repeat bottom center
+	padding-top: 130px
+	margin-top: -130px
+	padding-bottom: 50px
+	.wrap_sect
+		background: #f8f3f3
+		padding-top: 50px
+		padding-bottom: 100px
+		h2
+			font-size: 50px
+			margin-bottom: 85px
+		.wrap_item
+			text-align: center
+			h3
+				font-size: 24px
+				font-weight: bold
+				margin-bottom: 15px
+			.wrap_icon
+				background: #e3696e
+				background: -moz-linear-gradient(-45deg, #e3696e 0%, #b63d42 100%)
+				background: -webkit-linear-gradient(-45deg, #e3696e 0%,#b63d42 100%)
+				background: linear-gradient(135deg, #e3696e 0%,#b63d42 100%)
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3696e', endColorstr='#b63d42',GradientType=1 )
+				width: 100px
+				height: 100px
+				border-radius: 50%
+				text-align: center
+				margin: 0 auto
+				position: relative
+				margin-bottom: 55px
+				&:before
+					background: none
+					border: 2px dotted #898787
+					content: ""
+					display: block
+					position: absolute
+					top: -10px
+					left: -10px
+					right: -10px
+					bottom: -10px
+					pointer-events: none
+					border-radius: 20px
+
+				.fa
+					color: #fff
+					margin-top: 20px
+			.rot
+				transform: rotate(45deg)
+				border-radius: 15px				
+			.a_rot
+				transform: rotate(-45deg)
+			.wrap_text
+				width: 250px
+				margin: 0 auto
+
+.table_var
+	background: #fff url("../img/bg-tabl.png") no-repeat bottom center
+	padding-top: 50px
+	padding-bottom: 175px
+	h2
+		font-size: 40px
+		text-align: center
+	.wrap_table
+		padding-top: 50px
+		padding-bottom: 40px		
+		.classTable
+			width: 100%
+			text-align: center			
+			display: table
+			border-spacing: 7px		
+			.divTableHeading				
+				display: table-header-group
+				.divTableRow
+					display: table-row					
+					.divTableHead												
+						text-align: center
+						display: table-cell
+						padding: 7px						
+						span							
+							display: block
+							padding: 15px
+							font-size: 20px
+							font-weight: bold
+							cursor: default
+							margin-bottom: 5px
+						&.zn
+							vertical-align: middle
+							text-transform: uppercase
+			.divTableBody
+				display: table-row-group
+				.divTableRow
+					display: table-row					
+					&:nth-child(even) .divTableCell
+						background: #f6f6f6
+					.divTableCell
+						padding: 15px
+						display: table-cell
+						vertical-align: middle	
+						&.price_new
+							font-size: 22px
+							font-weight: 800
+						&.price_old
+							text-decoration: line-through					
+						&.left
+							text-align: left
+						.btn
+							padding: 20px 10px							
+							position: relative
+							&:after
+								background: transition
+								width: 100%
+								height: 100%
+								position: absolute
+								left: 0
+								top: 0
+								content: ''
+								-webkit-transition: all .3s ease-out
+								-moz-transition: all .3s ease-out
+								-o-transition: all .3s ease-out
+								-ms-transition: all .3s ease-out
+								box-shadow: 0 8px 30px rgba(189,68,73,.36)
+								border-radius: 7px
+							&:hover
+								color: #000
+								&:after
+									display: none
+	.quest_text
+		margin-top: 50px
+		margin-bottom: 50px
+		.qt1
+			font-size: 22px			
+		.qt2
+			font-size: 50px
+			font-weight: 900
+			text-align: left
+			margin-bottom: 10px
+	.btn_block
+		margin-top: 85px
+		margin-bottom: 50px
+		.btn			
+			position: relative
+			text-align: center
+			&:after
+				background: transition
+				width: 100%
+				height: 100%
+				position: absolute
+				left: 0
+				top: 0
+				content: ''
+				-webkit-transition: all .3s ease-out
+				-moz-transition: all .3s ease-out
+				-o-transition: all .3s ease-out
+				-ms-transition: all .3s ease-out
+				box-shadow: 0 8px 30px rgba(189,68,73,.36)
+				border-radius: 7px
+			&:hover
+				color: #000
+				&:after
+					display: none
+
+footer
+	background: url("../img/bg-footer.png") no-repeat top center
+	height: 125px
+	margin-top: -125px
+	color: #fff
+
+#popup_quest, #popup_mod1, #popup_mod2, #popup_mod3, #popup_mod4	
+	max-width: 480px
+	margin: auto	
+	background-color: #fff	
+	position: relative
+	padding: 40px
+	text-align: center
+	.mfp-close
+		right: 0
+		top: 0	
+	h3		
+		padding: 25px 30px
+		font-size: 27px
+		font-weight: bold
+		color: #fff
+		border-top-right-radius: 10px
+		border-top-left-radius: 10px 
+		text-align: center
+		margin-bottom: 0
+	.des
+		margin-bottom: 25px
+	.wrap_input
+		margin-bottom: 15px
+	.wrap_submit
+		text-align: center
+		margin-top: 25px
+		.btn
+			width: 100%	
+
+.modal
+	background: #fff	
+	max-height: 120%	
+	max-width: 870px
+	margin: auto	
+	z-index: 1003
+	position: relative
+	button.mfp-close			
+		background-image: url("../img/close-icon.png") no-repeat
+		right: 0
+		top: 0
+	.modalfill			
+		margin: auto 
+		padding: 100px 0
+		.modal-content
+			padding: 24px
+			.tac
+				text-align: center
+				font-size: 26px	
+
+				
+						
+
+
+
+

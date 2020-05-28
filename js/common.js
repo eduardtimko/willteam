@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+	$('.burger').on('click', function(){
+		$('.hidden-menu').toggleClass('active');
+	})
+
+
+
 	var form_id = '.form';
 	var form_ids = '.form-b'
 	$(form_ids).submit(function (evt) {//обработчик события submit для формы                           
