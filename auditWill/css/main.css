@@ -349,3 +349,20 @@ footer {
         font-size: 26px; }
 
 /*# sourceMappingURL=main.css.map */
+
+
+.btn_center{
+  text-align: center;
+}
+.w_btn_download{margin-top: 30px;}
+.w_btn_download .btn{
+  width: auto;
+  display: inline-block;
+}
+.castom_divTableHead{
+  width: 25%;
+}
+.castom_divTableHead .btn{
+  width: 180px;
+  margin: 0 auto;
+}
