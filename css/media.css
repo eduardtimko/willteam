@@ -15,7 +15,7 @@
 	}
 
 }
-
+.mobile_tabte_tabs{display: none;}
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	header {
@@ -66,7 +66,44 @@
 	footer .map {
 		margin-top: 35px;
 	}
-
+	.mobile_tabte_tabs{
+		display: block;
+		padding-top: 50px;
+    padding-bottom: 40px;
+	}
+	.desc_tabte_tabs{display: none;}
+	.mobile_tabte_tabs .mtt_title{
+		display: flex;
+		justify-content: space-between;
+	}
+	.mobile_tabte_tabs .mtt_title .w-mtt_tab{
+		width: 24%;
+		margin-bottom: 15px;
+	}
+	.mobile_tabte_tabs .mtt_title .w-mtt_tab .mtt_tab{
+		text-align: center;
+		transform: scale(0.9);
+	}
+	.mobile_tabte_tabs .mtt_title .w-mtt_tab .mtt_tab.activ{
+		transform: scale(1);
+	}
+	.mobile_tabte_tabs .mtt_body .mtt_content_block{
+		display: none;
+	}
+	.mobile_tabte_tabs .mtt_body .mtt_content_block.activ{
+		display: block;
+	}
+	.mobile_tabte_tabs .mtt_body .mtt_content_block ul{
+		margin-bottom: 30px;
+	}
+	.mobile_tabte_tabs .mtt_body .mtt_content_block ul li{
+		padding: 15px;
+	}
+	.mobile_tabte_tabs .mtt_body .mtt_content_block ul li.even_block{
+		background: #f6f6f6;
+	}
+	.mobile_tabte_tabs .mtt_body .mtt_content_block .divTableCell{text-align: center;}
+	.mobile_tabte_tabs .mtt_body .mtt_content_block .divTableCell a{display: inline-block; width: auto;}
 }
 
 /* Small Devices, Tablets */
@@ -106,7 +143,7 @@
 		font-size: 44px;
 	}
 	.table_var .wrap_table {
-		overflow-x: auto; 
+		overflow-x: auto;
 		position: relative;
 		z-index: 100;
 	}
@@ -206,7 +243,7 @@
 	header {
 		padding-bottom: 75px;
 	}
-	header .wrap_head {	
+	header .wrap_head {
 	    padding-top: 25px;
 	}
 	header .wrap_head h1 {
@@ -356,8 +393,8 @@
 @media only screen and (min-width : 768px) {
 	/* Иконка мобильного меню */
 	/* Добавим анимацию всех свойств для блоков нашей иконки */
-	header .top_line .main_menu_button span, 
-	header .top_line .main_menu_button span:before, 
+	header .top_line .main_menu_button span,
+	header .top_line .main_menu_button span:before,
 	header .top_line .main_menu_button span:after {
 	  transition: all 500ms ease-in-out;
 	}
@@ -368,7 +405,7 @@
 	}
 
 	/* Смещаем псевдо-элементы в центр иконки (на место основного блока) */
-	header .top_line .main_menu_button.active span:before, 
+	header .top_line .main_menu_button.active span:before,
 	header .top_line .main_menu_button.active span:after {
 	  top: 0;
 	}
